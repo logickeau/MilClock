@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mil.clock.widget"
+    android:versionCode="3"
+    android:versionName="1.02" >
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="8" android:maxSdkVersion="15"/>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver
+            android:name=".MilClockWidget"
+            android:label="@string/app_name" 
+            android:icon="@drawable/icon" >
+            
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="mil.clock.widget.MILCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mil_clock_widget_provider" />
+        </receiver>
+
+        <activity android:name=".MilClockWidgetConfig" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".MilClockActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+    </application>
+
+</manifest>

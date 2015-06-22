@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="1dip"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+
+
+		<LinearLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/LinearLayout1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/julz"
+		    android:gravity="center|center_vertical|top"
+		    android:orientation="vertical"
+		    android:padding="3dp" >
+
+
+
+			<TextView
+			    android:id="@+id/weekTitle"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/weekTitle"
+			    android:textSize="18sp" />
+
+			<TextView android:id="@+id/currentWeek"
+				android:layout_width="41dp" android:layout_height="wrap_content"
+				android:textSize="35sp" />
+		</LinearLayout>
+
+
+
+		<LinearLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/LinearLayout2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/julz"
+		    android:gravity="center|center_vertical|top"
+		    android:orientation="vertical"
+		    android:padding="3dp" >
+
+			<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/julianTitle"
+				android:textSize="18sp" />
+
+			<TextView android:id="@+id/julianDate" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="35sp" />
+		</LinearLayout>
+
+
+
+
+
+
+
+
+
+		<LinearLayout
+		    android:id="@+id/rCont"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/julz"
+		    android:baselineAligned="false"
+		    android:gravity="center|center_vertical"
+		    android:orientation="horizontal"
+		    android:padding="3dp" >
+
+			<LinearLayout android:id="@+id/right"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:layout_weight="0.02" android:gravity="left|top"
+				android:orientation="vertical">
+
+
+
+
+
+
+
+				<LinearLayout
+				    android:id="@+id/zuluCont"
+				    android:layout_width="wrap_content"
+				    android:layout_height="40dip"
+				    android:orientation="vertical" >
+
+					<TextView android:id="@+id/TextView06"
+						android:layout_width="wrap_content" android:layout_height="20dp"
+						android:layout_marginTop="0dp" android:gravity="top|left"
+						android:paddingTop="0dp" android:text="@string/zuluTitle"
+						android:textSize="12sp"  />
+
+
+					<TextView
+					    android:id="@+id/zuluTime"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:gravity="bottom|left"
+					    android:textSize="20sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+				    android:id="@+id/Line1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="#CCCCCC"
+				    android:orientation="vertical" android:layout_marginTop="1dp" android:layout_marginBottom="1dp">
+				</LinearLayout>
+
+
+
+
+
+
+				<LinearLayout
+				    android:id="@+id/actualCont"
+				    android:layout_width="wrap_content"
+				    android:layout_height="40dip"
+				    android:gravity="top"
+				    android:orientation="vertical" >
+
+					<TextView android:id="@+id/textView1"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:gravity="top|fill_vertical"
+						android:paddingTop="0dp" android:text="@string/actualTitle"
+						android:textSize="12sp" />
+
+
+
+					<TextView
+					    android:id="@+id/actualTime"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:gravity="bottom|left"
+					    android:textSize="20sp" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/linearLayout1"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:layout_weight="0.01" android:orientation="vertical">
+
+
+
+
+
+				<LinearLayout
+				    android:id="@+id/zuluDateCont"
+				    android:layout_width="fill_parent"
+				    android:layout_height="40dip"
+				    android:orientation="vertical" >
+
+					<TextView android:id="@+id/zuluDayName"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:paddingTop="0dp"
+						android:textSize="16dp" />
+
+					<TextView android:id="@+id/zuluShortDate"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:gravity="bottom|center_horizontal"
+						android:textSize="16dp" />
+				</LinearLayout>
+<LinearLayout
+				    android:id="@+id/Line2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="#CCCCCC"
+				    android:orientation="vertical" android:layout_marginBottom="1dp" android:layout_marginTop="1dp">
+				</LinearLayout>
+
+
+
+
+
+				<LinearLayout
+				    android:id="@+id/actualDateCont"
+				    android:layout_width="fill_parent"
+				    android:layout_height="40dip"
+				    android:gravity="top"
+				    android:orientation="vertical" >
+
+					<TextView android:id="@+id/actualDayName"
+						android:layout_width="fill_parent" android:layout_height="20dp"
+						android:gravity="center_horizontal"
+						android:paddingTop="0dp" android:textSize="16dp" />
+
+					<TextView android:id="@+id/actualShortDate"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:gravity="bottom|center_horizontal"
+						android:textSize="16dp" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>

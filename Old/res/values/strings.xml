@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_text">Hello Widget!</string>
+    <string name="app_name">Mil Clock</string>
+    <string name="weekTitle">Week</string>
+    <string name="julianTitle">Julian</string>
+    <string name="zuluTitle">Zulu Time</string>
+    <string name="actualTitle">Local Time</string>
+    <string name="appwidget_prefix_default">Oh hai</string>
+   
+    
+    <string name="appwidget_configure_instructions">Input your fiscal year start date.</string>
+</resources>
